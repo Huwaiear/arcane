@@ -109,3 +109,6 @@
 - type: Tag
   id: Bed
 
+- type: Tag
+  id: Magazine50BMG
+
