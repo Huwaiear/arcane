@@ -65,3 +65,15 @@
   - type: UseDelay
     delay: 0.8
   - type: UseDelayBlockShoot
+  - type: ActionGrant
+    actions:
+    - ActionArcaneGoreExecution
+    - ActionArcaneTargetLock
+  - type: ItemActionGrant
+    actions:
+    - ActionArcaneGoreExecution
+    - ActionArcaneTargetLock
+  - type: GoreExecution
+  - type: TargetLock
+    range: 20
+    pickRadius: 3

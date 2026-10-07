@@ -1,0 +1,33 @@
+- type: entity
+  parent: BaseAction
+  id: ActionArcaneGoreExecution
+  name: gore execution
+  description: Arms the rifle. The next shot rips the head off a living target, leaving its brain and eyes behind.
+  components:
+  - type: Action
+    itemIconStyle: BigItem
+    useDelay: 1
+    icon:
+      sprite: Mobs/Species/Human/organs.rsi
+      state: brain
+  - type: InstantAction
+    event: !type:ToggleActionEvent
+
+- type: entity
+  parent: BaseAction
+  id: ActionArcaneTargetLock
+  name: target lock
+  description: Pick a living creature to lock the camera onto. The next shot flies straight at it.
+  components:
+  - type: Action
+    itemIconStyle: BigItem
+    useDelay: 1
+    icon:
+      sprite: _Goobstation/Wizard/Effects/effects.rsi
+      state: marker
+  - type: TargetAction
+    range: 20
+    checkCanAccess: false
+    interactOnMiss: false
+  - type: WorldTargetAction
+    event: !type:ArcaneTargetLockActionEvent
