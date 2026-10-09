@@ -20,3 +20,7 @@
           amount: 1
         - id: CartridgeHighCaliberAPX
           amount: 1
+        - id: ClothingOuterHardsuitSpecter
+          amount: 1
+        - id: ClothingShoesBootsMagSpecter
+          amount: 1
